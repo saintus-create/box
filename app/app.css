@@ -82,6 +82,12 @@ font-variant-ligatures: common-ligatures contextual;
 font-variant-numeric: oldstyle-nums proportional-nums;
 }
 
+body {
+margin: 0;
+padding: 0;
+min-height: 100vh;
+}
+
 /* ===========================
 TEXT-BOX-TRIM (Progressive Enhancement)
 Kills invisible space above/below text for mathematically true margins
@@ -204,6 +210,8 @@ Air-set, strict baseline grid.
 max-width: var(--measure-body);
 font-size: var(--font-size-base);
 line-height: 1.75;
+margin: 0 auto;
+padding: 0 var(--space-unit);
 }
 
 .prose p {
